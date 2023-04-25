@@ -5,7 +5,8 @@
             "already_in_progress": "Configuration flow is already in progress",
             "no_devices_found": "No devices found on the network",
             "no_h264": "There were no H264 streams available.  Check the profile configuration on your device.",
-            "no_mac": "Could not configure unique ID for ONVIF device."
+            "no_mac": "Could not configure unique ID for ONVIF device.",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "auth_failed": "Could not authenticate: {error}",
@@ -35,6 +36,13 @@
                     "host": "Select discovered ONVIF device"
                 },
                 "title": "Select ONVIF device"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "title": "Reauthenticate the ONVIF device"
             },
             "user": {
                 "data": {
