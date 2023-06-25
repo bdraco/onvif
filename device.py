@@ -388,7 +388,7 @@ class ONVIFDevice:
             )
             LOGGER.debug("%s: WSPullPointSupport: %s", self.name, pull_point_support)
             return await self.events.async_start(
-                pull_point_support is not False,
+                True,
                 self.config_entry.options.get(
                     CONF_ENABLE_WEBHOOKS, DEFAULT_ENABLE_WEBHOOKS
                 ),
