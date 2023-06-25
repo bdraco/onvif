@@ -11,6 +11,7 @@
         "error": {
             "auth_failed": "Could not authenticate: {error}",
             "cannot_connect": "Failed to connect",
+            "no_onvif_service": "No ONVIF service found. Check that the port number is correct.",
             "onvif_error": "Error setting up ONVIF device: {error}. Check logs for more information."
         },
         "step": {
@@ -42,6 +43,7 @@
                     "password": "Password",
                     "username": "Username"
                 },
+                "description": "Some devices will reject authentication if the time is out of sync by more than 5 seconds. If authentication is unsuccessful, verify the time on the device is correct and try again.",
                 "title": "Reauthenticate the ONVIF device"
             },
             "user": {
@@ -57,6 +59,7 @@
         "step": {
             "onvif_devices": {
                 "data": {
+                    "enable_webhooks": "Enable Webhooks",
                     "extra_arguments": "Extra FFMPEG arguments",
                     "rtsp_transport": "RTSP transport mechanism",
                     "use_wallclock_as_timestamps": "Use wall clock as timestamps"
