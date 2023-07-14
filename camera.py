@@ -8,6 +8,7 @@ from onvif.exceptions import ONVIFError
 import voluptuous as vol
 from yarl import URL
 
+from homeassistant.backports.functools import cached_property
 from homeassistant.components import ffmpeg
 from homeassistant.components.camera import Camera, CameraEntityFeature
 from homeassistant.components.ffmpeg import CONF_EXTRA_ARGUMENTS, get_ffmpeg_manager
@@ -126,7 +127,7 @@ class ONVIFCameraEntity(ONVIFBaseEntity, Camera):
             return f"{self.mac_or_serial}_{self.profile.index}"
         return self.mac_or_serial
 
-    @property
+    @cached_property
     def entity_registry_enabled_default(self) -> bool:
         """Return if the entity should be enabled when first added to the entity registry."""
         return self.device.max_resolution == self.profile.video.resolution.width

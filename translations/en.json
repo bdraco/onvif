@@ -67,5 +67,45 @@
                 "title": "ONVIF Device Options"
             }
         }
+    },
+    "services": {
+        "ptz": {
+            "description": "If your ONVIF camera supports PTZ, you will be able to pan, tilt or zoom your camera.",
+            "fields": {
+                "continuous_duration": {
+                    "description": "Set ContinuousMove delay in seconds before stopping the move.",
+                    "name": "Continuous duration"
+                },
+                "distance": {
+                    "description": "Distance coefficient. Sets how much PTZ should be executed in one request.",
+                    "name": "Distance"
+                },
+                "move_mode": {
+                    "description": "PTZ moving mode.",
+                    "name": "Move Mode"
+                },
+                "pan": {
+                    "description": "Pan direction.",
+                    "name": "Pan"
+                },
+                "preset": {
+                    "description": "PTZ preset profile token. Sets the preset profile token which is executed with GotoPreset.",
+                    "name": "Preset"
+                },
+                "speed": {
+                    "description": "Speed coefficient. Sets how fast PTZ will be executed.",
+                    "name": "Speed"
+                },
+                "tilt": {
+                    "description": "Tilt direction.",
+                    "name": "Tilt"
+                },
+                "zoom": {
+                    "description": "Zoom.",
+                    "name": "Zoom"
+                }
+            },
+            "name": "PTZ"
+        }
     }
 }
