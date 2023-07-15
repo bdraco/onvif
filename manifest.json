@@ -1,6 +1,6 @@
 {
   "domain": "onvif",
-  "version": "2023.8.1",
+  "version": "2023.8.3",
   "name": "ONVIF",
   "codeowners": ["@hunterjm"],
   "config_flow": true,
@@ -9,5 +9,5 @@
   "documentation": "https://www.home-assistant.io/integrations/onvif",
   "iot_class": "local_push",
   "loggers": ["onvif", "wsdiscovery", "zeep"],
-  "requirements": ["onvif-zeep-async==3.1.10", "WSDiscovery==2.0.0"]
+  "requirements": ["onvif-zeep-async==3.1.12", "WSDiscovery==2.0.0"]
 }
